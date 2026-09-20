@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image:linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.7) ),  url(./img/the\ tarot\ club\ Lord\ of\ the\ mysteries\ anime\ webnovel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a, h1, h2, p{
+    color: white;
+}
+.content{
+    width: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    border-radius:20px ;
+}
+.content div img{
+    border-radius: 5px; 
+    border: 1px solid white;
+}
+.ustun{
+    display: flex;
+    flex-direction: column;
+}
