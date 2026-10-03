@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    font-family: Noto Sans, system-ui, sans-serif;
 }
 .topbar{
     position: fixed;
@@ -49,6 +50,7 @@ a, h1, h2, p{
 .content a{
     font-size: 18px;
     width: 100%;
+    margin-top: 30px;
     text-align: center;
 }
 .content{
@@ -74,16 +76,18 @@ a, h1, h2, p{
       cursor: grab;
 }
 .icon{
-    width: 20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-bottom: 2px double whitesmoke;
     position: absolute;
     top: 10%;
     left: 50px;
-    /* transform: translate(0%, -10%);  */}
-.icon img{
-    width: 80px;
-    height: 100px;
-    border-radius:50%;
-}
+    background:linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.7) ) ;
+    }
 .mydivheader .red{
     margin-left: 20px;
     width: 20px;
