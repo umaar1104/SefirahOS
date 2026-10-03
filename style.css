@@ -8,27 +8,112 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
-a, h1, h2, p{
-    color: white;
+.topbar{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.151);
+    color: #fff;
+    display: flex;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
 }
-.content{
+#mydiv{
     width: 50%;
     border: 2px solid white;
-    display: flex;
-    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    padding: 20px;
     border-radius:20px ;
+}
+a, h1, h2, p{
+    color: white;
+}
+.content p{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+.content h1{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+}
+.content h2{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+.content a{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    display: flex;
+    margin: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+} 
+.content div{
+    width: 50%;
 }
 .content div img{
     border-radius: 5px; 
     border: 1px solid white;
 }
+.mydivheader{
+    width: 100%;
+    height: 30px;
+    background-color:rgba(0, 0, 0, 0.151) ;
+    display: flex;
+    align-items: center;
+    border-radius:20px 20px 0 0;
+      cursor: grab;
+}
+.icon{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    /* transform: translate(0%, -10%);  */}
+.icon img{
+    width: 80px;
+    height: 100px;
+    border-radius:50%;
+}
+.mydivheader .red{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}.mydivheader .green{
+    cursor: pointer;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
 .ustun{
     display: flex;
     flex-direction: column;
+}
+@media (min-width:1120px) {
+     .content div img{
+    width: 80px;
+}
+}
+@media(max-width:490px){
+  .os{
+    display: none;
+  }
+  .weather{
+    margin-left: 16px;
+  }
 }
