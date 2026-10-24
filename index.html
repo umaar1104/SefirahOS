@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/LordOfTheMysteries _World of gray fog.jpg" type="image/x-icon">
 </head>
-<body style="background-color: #3a3c3f; font-family: Arial, Helvetica, sans-serif;">
-    <header> 
-        <div class="topbar">
-        <p class="os" style="margin-left: 36px; background-color: rgba(256, 256, 256, 0.125); border-radius: 5px; padding: 6px 16px; cursor: pointer;">SefiriahOS</p><p class="weather" style=" background-color: rgba(256, 256, 256, 0.25); border-radius: 5px; padding: 6px 16px; cursor: pointer;">⛅Always Learning⛅</p><p style="margin-right: 36px; background-color: rgba(256, 256, 256, 0.125); border-radius: 5px; padding: 6px 16px; cursor: pointer;" id="time"></p>
-     </div>
-    </header>
-   <img class="icon" id="openWindow" src="img/Image Expansion LOTM.jpg" alt="">
-    <div id="mydiv">
+<body style="background-color: #3a3c3f; font-family: Arial, Helvetica, sans-serif;">  
+      <div id="mydiv">
         <div class="mydivheader" id="mydivheader"><p id="closeWindow" class="red"></p></div>
         <div class="content">
         <div><img style="width:264px;" src="img/download (2).jpg" alt=""></div>
@@ -25,6 +19,37 @@
       <a href="https://www.instagram.com/yeager1_st/">Instagram</a><a href="https://t.me/meroquixel">Telegram</a></div>
     </div>
 </div>
-    <script src="script.js"></script>
+    <header> 
+        <div class="topbar" id="top">
+        <p class="os" style="margin-left: 36px; background-color: rgba(256, 256, 256, 0.125); border-radius: 5px; padding: 6px 16px; cursor: pointer;">SefiriahOS</p><p class="weather" style=" background-color: rgba(256, 256, 256, 0.25); border-radius: 5px; padding: 6px 16px; cursor: pointer;">⛅Always Learning⛅</p><p style="margin-right: 36px; background-color: rgba(256, 256, 256, 0.125); border-radius: 5px; padding: 6px 16px; cursor: pointer;" id="time"></p>
+     </div>
+    </header>
+<div id="desktopApp" style=" padding-top: 264px; padding-left: 16px;">
+    <div class="selected"  style="display: flex; flex-direction: column; text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+        <img class="icon" class="selected" style="width: 100px; height: 100px; border-radius:50%; border: 2px solid white;" id="openWindow" src="img/Image Expansion LOTM.jpg" alt="">
+        <p>Welcome!!!</p>
+        <img class="icon" style="width: 100px; height: 100px; border-radius:50%; border: 2px solid white;" id="openNotes" src="img/Aizen Nah, I'd Win.jpg" alt=""><p>Notes</p>
+        <img class="icon" src="img/LordOfTheMysteries _World of gray fog.jpg" alt="" style="width: 100px; height: 100px; border-radius:50%; border: 2px solid white;" id="themeIcon"><p>Theme</p>
+    </div>
+</div>
+<div class="window" id="theme" style="bottom: 500px; left: 300px; background-color: transparent; ">
+<div class="windowheader" id="themeheader">
+ <p id="themeclose" class="red"></p><p class="headertext" style="margin-left: 20px;">Themes</p>
+</div>
+<div class="themeImageCon">
+<img class="themeImages" onclick="changeTheme('img/photo_1_2026-10-18_16-24-30.jpg')" src="img/photo_1_2026-10-18_16-24-30.jpg" alt="" style="width: 40%; height: 150px; margin-left: 22px; ">
+<img class="themeImages" onclick="changeTheme('img/photo_2_2026-10-18_16-24-30.jpg')" src="img/photo_2_2026-10-18_16-24-30.jpg" alt="" style="width: 40%; height: 150px; margin-left: 22px; ">
+<img class="themeImages" onclick="changeTheme('img/photo_3_2026-10-18_16-24-30.jpg')" src="img/photo_3_2026-10-18_16-24-30.jpg" alt="" style="width: 40%; height: 150px; margin-left: 22px; ">
+</div>
+
+</div>
+<div class="window" id="notes">
+    <div class="windowheader" id="notesheader">
+        <p id="notesclose" class="red"></p><p class="headertext" style="margin-left: 20px;">Notes</p>
+    </div>
+    <div id="notesContent"></div>
+</div>
+    <script src="script.js">
+    </script>
 </body>
 </html>
