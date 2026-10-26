@@ -20,4 +20,4 @@ It was very hard to add every function (Drag, Open/close window and zIndex), it 
 You can try SefirahOS live here: [https://umaar1104.github.io/SefirahOS/](https://umaar1104.github.io/SefirahOS/)
 
 
-![SefirahOS Desktop](https://github.com/umaar1104/SefirahOS/blob/master/img/photo_2026-10-24_18-24-48.jpg)
+![SefirahOS Desktop](https://github.com/umaar1104/SefirahOS/blob/master/photo_2026-10-26_19-26-23.jpg)
